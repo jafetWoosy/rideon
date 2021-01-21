@@ -1,21 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+
+import ClassInfo from './app/home/classInfo';
+import SelectAsiento from './app/home/selectAsiento';
+import Index from './app/home/Index';
+import IndexStore from './app/store/index';
+import Product from './app/store/Product';
+
+import DataSend from './app/store/dataSend';
+import Navigation from './app/navigation/navigation';
+
+
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    <Navigation/>
+  )
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
